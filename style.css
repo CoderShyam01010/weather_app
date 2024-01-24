@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family:'Salsa', cursive;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    background-color: white;
+    width: 400px;
+    height: min-content;
+    padding: 28px;
+    border-radius: 12px;
+
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box input{
+    width: 80%;
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: rgb(186, 236, 219);
+    padding: 12px;
+    border-radius: 14px;
+}
+.search-box button{
+    height: 48px;
+    width: 48px;
+    background-color: rgb(186, 236, 219);
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: larger;
+}
+.search-box button:hover{
+    color: white;
+    background-color: rgb(51, 49, 49);
+}
+.weather-body img{
+    width: 50%;
+}
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0 20px 0;
+}
+.weather-box{
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+.weather-box .temp{
+    font-size: 30px;
+    position: relative;
+    font-weight: 800;
+    /* we give this position relative and sup position absolute to remove gap between temparature and degree celcius */
+    
+}
+.weather-box .temp sup{
+    font-size: 20px;
+    position: absolute;
+   
+}
+.weather-box .description{
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.weather-details{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+}
+.weather-details i{
+    font-size: 30px;
+}
+.weather-details .text{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.text span{
+    font-size: 26px;
+}
+.location-not-found{
+    margin-top:20px;
+    display: none;
+   
+}
+.location-not-found img{
+    width: 80%;
+    margin: 20px;
+}
+.location-not-found h1{
+    text-align: center;
+}
+
